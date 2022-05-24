@@ -13,4 +13,11 @@ export class AppComponent {
   constructor(statistiqueService: StatistiqueService) {
     this.statistiqueService = statistiqueService;
   }
+
+  deleteStatistique(id: string){
+    const index: number = this.statistiqueService.listeStatistique.findIndex(stat => stat.id === id); 
+    if (index !== -1) { 
+      this.statistiqueService.listeStatistique.splice(index, 1); 
+    }
+  }
 }
