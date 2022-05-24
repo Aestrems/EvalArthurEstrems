@@ -23,7 +23,16 @@ export class AppComponent {
     valeur: "40%"
   }
 
+  nombreEtudiantPourcent: Statistique = {
+    id: "fd4e6f59-nc6f-16eb-62nc-9g3286ebfc46",
+    titre: "Pourcentage d'étudiant",
+    valeur: "20%"
+  }
+
   constructor() {
     this.listeStatistique = [this.nombreAdultePourcent, this.nombreEnfantPourcent];
+    setTimeout(() => {
+      this.listeStatistique.push(this.nombreEtudiantPourcent); 
+      }, 3000);
   }
 }
