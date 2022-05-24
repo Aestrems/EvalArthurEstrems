@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <h1>Liste Statistique</h1>
   <div class="row">
-    <div *ngFor="let s of listeStatistique">
+    <div *ngFor="let s of statistiqueService.listeStatistique">
       <app-statistique [statistique]="s"></app-statistique>
     </div>
   </div>
