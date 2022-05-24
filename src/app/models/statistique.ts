@@ -1,11 +1,18 @@
 export class Statistique {
     id : string;
-    titre : string;
-    valeur : string;
+    title : string;
+    value : string;
 
-    constructor(id: string, titre: string, valeur: string){
+    constructor(id: string, titre: string, value: string){
       this.id = id;
-      this.titre = titre;
-      this.valeur = valeur;
+      this.title = titre;
+      this.value = value;
     }
   }
+
+export type StatistiqueURL = {
+  id : string;
+  title : string;
+  value : string;
+  updatedAt : number;
+}
